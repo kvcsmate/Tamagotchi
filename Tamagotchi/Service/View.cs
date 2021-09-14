@@ -9,7 +9,6 @@ namespace Tamagotchi.Service
     {
 
         int view_length=20;
-        int type = 0;
         List<string> view = new List<string>();
         public View()
         {
@@ -18,10 +17,6 @@ namespace Tamagotchi.Service
             {
                 view.Add("");
             }
-            
-            
-
-
         }
         public void Create_Menu(List<string> menuitems)
         {

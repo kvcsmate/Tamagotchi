@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Tamagotchi.Service;
 using System.Linq;
 
-namespace Tamagotchi.Persistence
+namespace Tamagotchi.Model
 {
     public class Pet
     {
@@ -184,6 +184,8 @@ namespace Tamagotchi.Persistence
                 }
 
             }
+            _view.msg("Játék", "Játék vége!");
+            Thread.Sleep(500);
         }
     }
 }

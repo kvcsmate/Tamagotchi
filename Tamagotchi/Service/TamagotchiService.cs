@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Tamagotchi.Persistence;
+using Tamagotchi.Model;
 
 namespace Tamagotchi.Service
 {
     public class TamagotchiService
     {
-        //List<Pet> pettypes;
         public void Initialize()
         {
-            //pettypes = new List<Pet>();
+
             View view = new View();
             Console.WriteLine("Válassz állatot");
             Console.WriteLine("1-Cica");
@@ -29,11 +28,6 @@ namespace Tamagotchi.Service
             Console.Clear();
             Console.Write("Mi az állatod neve:");
             string petname = Console.ReadLine();
-            /*pettypes.Add(new Cat(petname,view));
-            pettypes.Add(new Dog(petname, view));
-            pettypes.Add(new Hamster(petname, view));
-
-            pettypes[animal].Init();*/
             switch (animal)
             {
                 case 1:Cat cat = new Cat(petname,view);cat.Init();break;

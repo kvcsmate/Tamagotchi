@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Tamagotchi.Service;
 using System.Linq;
-namespace Tamagotchi.Persistence
+namespace Tamagotchi.Model
 
 {
     class Cat : Pet
